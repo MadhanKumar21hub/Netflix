@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* globel code */
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background: var(--background);
+
+}
+select {
+    appearance: none;
+    -moz-appearance: none;
+    text-indent: 0px;
+    text-overflow: '';
+    padding: 8px 22px;
+    /* position: relative; */
+    outline: 1px solid var(--white);
+    border-radius: 3px;
+    background: transparent;
+    color: var(--white);
+}
+select option{
+    background: var(--footer-font-color);
+}
+:root{
+    --red: #e50914;
+    --background: rgb(7, 7, 7);
+    --border-bottom: #303030;
+    --footer-font-color: #737373;
+    --icon-color: #999;
+    --white:#fff;
+    --border-outline:blue;
+}
+/* header start */
+/* header .nfbg  #nfContant{
+    background: rgba(0,0,0,.4);
+    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+} */
+/* header #nfContant{
+    background-image: url(assets/images/master\ img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+} */
+header img{
+    width: 100%;
+    position: absolute;
+    filter: brightness(.3);
+    /* height: 100vh; */
+    object-fit: cover;
+    height: 100%;
+    border-bottom: 8px solid var(--border-bottom);
+}
+header #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 20px 40px;
+    margin-bottom: 150px;
+    position: relative;
+}
+.brand-name{
+    margin-top: 120px;
+    color: var(--red);
+}
+.brand-name svg path{
+    fill: var(--red);
+}
+#nav-right{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+#nav-right .fa-sharp{
+    position: absolute;
+    z-index: 1;
+    color: var(--white);
+}
+#nav-right .fa-sharp:first-child{
+    padding: 11px 0 2px;
+    margin-left:5px;
+    font-size: 0.75rem;
+}
+#nav-right .fa-sharp:last-child{
+    padding: 8px 0px;
+    margin-left:-20px;
+    font-size: 1rem;
+}
+#nav-right button{
+    padding: 7px 17px;
+    background: var(--red);
+    color: var(--white);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+/* header end */
+/* header Contant */
+#Contant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 70vh; */
+    text-align: center;
+    color: var(--white);
+    /* width: 40%;
+    margin: auto; */
+    position: relative;
+}
+#Contant h1{
+    font-size: 45px;
+    width: 70%;
+    margin: auto;
+}
+#Contant h2{
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 30px
+}
+#Contant h3{
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.email{
+    display: flex;
+    justify-content: center;
+}
+.email input{
+    padding: 20px 100px 20px 5px;
+    min-width: 450px;
+    border-radius: 2px 0 0 2px;
+    outline: none;
+}
+.email input:focus{
+    outline: 1px solid var(--border-outline);
+}
+.email input::placeholder{
+    font-size: 17px;
+}
+.getStart{
+    position: relative;
+}
+#get-start-arrow{
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+}
+.email button{
+    padding: 14px 60px;
+    background: var(--red);
+    color: var(--white);
+    /* margin-left: -5px; */
+    /* margin-bottom: -20px; */
+    cursor: pointer;
+    font-size: 26px;
+    border: none;
+    border-radius: 0 2px 2px 0;
+}
+/* header Contant end */
+
+/* main  */
+
+main{
+    margin-top: 100px;
+}
+
+section{
+    /* margin-top: 100px; */
+    position: relative;
+    padding: 70px 100px;
+    display: flex;
+    border-bottom:8px solid var(--border-bottom) ;
+    align-items: center;
+    background: transparent;
+    color: var(--white);
+    width: 100%;
+}
+section .card-title{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+section .card-subtitle{
+    font-size: 26px;
+    font-weight: 400;
+    width: 80%;
+}
+.card-media{
+    position: relative;
+    max-width: 100%;
+    /* margin-left: 70px; */
+}
+#card-img{
+    width:120%;
+    position: relative;
+    z-index: 99;
+}
+.card-media video{
+    position: absolute;
+   left: 67px;
+   width: 90%;
+   top: 20%;
+   /* z-index: -99; */
+   /* object-fit: contain; */
+}
+
+#card{
+    width: 50%;
+    /* margin-right: 100px; */
+}
+
+#card #img1{
+    width: 100%;
+}
+#download{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--border-bottom);
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: -110px;
+    background: var(--background);
+    
+}
+#download #down-name{
+    font-size: 12px;
+    position: absolute;
+    left: 80px;
+}
+#down-icon img{
+    position: relative;
+    width: 45%;
+    left: 90px;
+}
+#down-name p{
+    color: var(--border-outline);
+}
+#card #img2{
+    width: 35%;
+}
+#card-contant{
+   width: 70%;
+   margin-left: 100px;
+}
+
+
+.card-media1{
+    position: relative;
+}
+.card-media1 #card-img1{
+    position: relative;
+    width: 110%;
+    z-index: 99;
+    overflow: hidden;
+
+}
+.card-media1 video{
+    position: absolute;
+    width: 70%;
+    right: 50px;
+    top: 30px;
+    /* width: 100%; */
+    height: 45%;
+    object-fit: cover;
+}
+
+
+#card #img3{
+    width: 500px;
+    object-fit: cover;
+    margin-right: 100px;
+}
+#card-contant1 .card-subtitle{
+    width: 100%;
+}
+
+
+
+/* faqimonial */
+
+#faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 70%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+#faq-title{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+#faq #btn,
+#faq #btn1,
+#faq #btn2,
+#faq #btn3,
+#faq #btn4,
+#faq #btn5{
+    padding: 20px ;
+    /* padding-right: 31em; */
+    margin-right: 31em;
+    outline: none;
+    border: none;
+    background: var(--border-bottom);
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 550;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    position: relative;
+}
+.fa-plus{
+    position: absolute;
+    font-size: 50px;
+    font-weight: 100;
+    z-index: 99;
+    right: 30px;
+    margin-top: 5px;
+    transform: rotate(-5deg);
+    cursor: pointer;
+}
+.faqContant{
+    max-height: 0;
+    transition: .5s cubic-bezier(0.5, 0, 0.1, 1);
+    background: var(--border-bottom);
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 20px;
+    margin-top: 1px;
+    display: none;
+    /* transition: 1s; */
+}
+.faqContant-open{
+    display: block;
+    max-height: 1200px;
+    transition: max-height .25s cubic-bezier(.5,0,.1,1);
+    background: var(--border-bottom);
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 20px;
+    margin-top: 1px;
+}
+
+.faq-sub{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-weight: 550;
+}
+
+
+/* footer */
+footer{
+    padding-top: 70px;
+    padding-bottom: 20px;
+    height: auto;
+    width: 70%;
+    margin: auto;
+    color: var(--footer-font-color);
+}
+footer ul{
+    list-style: none;
+}
+footer a{
+    color: var(--footer-font-color);
+    text-decoration: none;
+
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+.footer-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.footer-menu a{
+    line-height: 2;
+    font-size: 14px;
+}
+
+footer select{
+    color: var(--footer-font-color);
+    border: 1px solid rgb(36, 35, 35);
+    outline: none;
+    padding: 15px 30px;
+    font-size: 17px;
+    font-weight: 550;
+    margin-bottom: 30px;
+}
+footer select option{
+    background: var(--border-bottom);
+    color: var(--footer-font-color);
+}
+footer #nav-right .fa-sharp{
+    color: var(--footer-font-color);
+    font-size: 16px !important;
+    margin-top: 7px;
+}
+
+footer #footer-brand{
+    font-size: 13px;
+}
+
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1123px){
+    #faq{
+        width: 80%;
+    }
+    /* .email{
+        flex-direction: column;
+        align-items: center;
+    }
+    .email input{
+       min-width: 45em;
+       margin-bottom: 20px;
+    }
+    .email button{
+        padding: 10px 30px;
+        font-size: 19px;
+    } */
+} 
