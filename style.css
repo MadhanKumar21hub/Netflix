@@ -118,7 +118,8 @@ header #nav{
 }
 #Contant h1{
     font-size: 45px;
-    width: 70%;
+    width: 80%;
+    font-weight: 550;
     margin: auto;
 }
 #Contant h2{
@@ -187,6 +188,10 @@ section{
     background: transparent;
     color: var(--white);
     width: 100%;
+}
+section > div:nth-child(1),
+section > div:nth-child(2){
+    width: 50%;
 }
 section .card-title{
     font-size: 50px;
@@ -444,3 +449,17 @@ footer #footer-brand{
         font-size: 19px;
     } */
 } 
+
+@media only screen and (max-width:1024px) {
+    section{
+        padding: 50px 50px;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    section{
+        flex-direction: column;
+        width: 100%;
+        padding: 30px;
+    }
+}
